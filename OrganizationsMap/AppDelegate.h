@@ -4,8 +4,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) Store *store;
+@property(strong, nonatomic) UIWindow *window;
+@property(strong, nonatomic) Store *store;
 
 @end
-

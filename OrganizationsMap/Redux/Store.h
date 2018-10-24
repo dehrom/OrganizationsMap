@@ -6,7 +6,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef id<State>(^ReduceBlock)(id<State> state, id<Action> action);
+typedef id<State> (^ReduceBlock)(id<State> state, id<Action> action);
 
 @interface Store : NSObject
 - (instancetype)init NS_UNAVAILABLE;
