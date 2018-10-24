@@ -1,0 +1,6 @@
+module Pods_OrganizationsMap {
+  umbrella header "Pods-OrganizationsMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

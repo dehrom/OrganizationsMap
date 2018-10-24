@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EE71FEC519951864DB397C1 /* libPods-OrganizationsMapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBDBF25080325D1033F4071 /* libPods-OrganizationsMapTests.a */; };
+		C1AC3EAF2A662C90E0E07183 /* libPods-OrganizationsMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4B6AB8DB48280BAEFBD9C2 /* libPods-OrganizationsMap.a */; };
 		EF6F2E5E217E150300207983 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E5D217E150300207983 /* AppDelegate.m */; };
-		EF6F2E61217E150300207983 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E60217E150300207983 /* ViewController.m */; };
-		EF6F2E64217E150300207983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6F2E62217E150300207983 /* Main.storyboard */; };
 		EF6F2E66217E150400207983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6F2E65217E150400207983 /* Assets.xcassets */; };
 		EF6F2E69217E150400207983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6F2E67217E150400207983 /* LaunchScreen.storyboard */; };
 		EF6F2E6C217E150400207983 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E6B217E150400207983 /* main.m */; };
 		EF6F2E76217E150400207983 /* OrganizationsMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E75217E150400207983 /* OrganizationsMapTests.m */; };
+		EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF760658217FF119002CAF7A /* UIApplication+Accessor.m */; };
+		EF98B92E217E22AB006AB9AF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B92D217E22AB006AB9AF /* MainViewController.m */; };
+		EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B94C217E7B66006AB9AF /* ListTableViewController.m */; };
+		EF98B950217E7D33006AB9AF /* OrganizationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B94F217E7D33006AB9AF /* OrganizationCell.m */; };
+		EF98B957217E95D0006AB9AF /* ListFetchService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B956217E95D0006AB9AF /* ListFetchService.m */; };
+		EFB32493217FDE77005BA90A /* ListCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB32492217FDE77005BA90A /* ListCellModel.m */; };
+		EFB3249D217FE56F005BA90A /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3249C217FE56F005BA90A /* Store.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430C2C5547097340B6FDF47C /* Pods-OrganizationsMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMapTests.release.xcconfig"; path = "Target Support Files/Pods-OrganizationsMapTests/Pods-OrganizationsMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FA86AD248266DF65D7F7554 /* Pods-OrganizationsMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMapTests/Pods-OrganizationsMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57C0599487B022BFD74A4F27 /* Pods-OrganizationsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMap.debug.xcconfig"; path = "Target Support Files/Pods-OrganizationsMap/Pods-OrganizationsMap.debug.xcconfig"; sourceTree = "<group>"; };
+		5AFBAA196DD54B6133FF375E /* Pods-OrganizationsMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMap/Pods-OrganizationsMap.release.xcconfig"; sourceTree = "<group>"; };
+		5B4B6AB8DB48280BAEFBD9C2 /* libPods-OrganizationsMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrganizationsMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA1960BAEABEFDBC340BEA9 /* Pods-OrganizationsMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMap.release.xcconfig"; path = "Target Support Files/Pods-OrganizationsMap/Pods-OrganizationsMap.release.xcconfig"; sourceTree = "<group>"; };
+		5FBDBF25080325D1033F4071 /* libPods-OrganizationsMapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrganizationsMapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE087EC2D691A075B9A0A9D7 /* Pods-OrganizationsMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMapTests.debug.xcconfig"; path = "Target Support Files/Pods-OrganizationsMapTests/Pods-OrganizationsMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF6F2E59217E150300207983 /* OrganizationsMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrganizationsMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6F2E5C217E150300207983 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF6F2E5D217E150300207983 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EF6F2E5F217E150300207983 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF6F2E60217E150300207983 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EF6F2E63217E150300207983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF6F2E65217E150400207983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6F2E68217E150400207983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF6F2E6A217E150400207983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +52,25 @@
 		EF6F2E71217E150400207983 /* OrganizationsMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrganizationsMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6F2E75217E150400207983 /* OrganizationsMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizationsMapTests.m; sourceTree = "<group>"; };
 		EF6F2E77217E150400207983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF760655217FEB7C002CAF7A /* StoreSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSubscriber.h; sourceTree = "<group>"; };
+		EF760657217FF119002CAF7A /* UIApplication+Accessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Accessor.h"; sourceTree = "<group>"; };
+		EF760658217FF119002CAF7A /* UIApplication+Accessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Accessor.m"; sourceTree = "<group>"; };
+		EF98B92C217E22AB006AB9AF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EF98B92D217E22AB006AB9AF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EF98B94B217E7B66006AB9AF /* ListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		EF98B94C217E7B66006AB9AF /* ListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		EF98B94E217E7D33006AB9AF /* OrganizationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganizationCell.h; sourceTree = "<group>"; };
+		EF98B94F217E7D33006AB9AF /* OrganizationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizationCell.m; sourceTree = "<group>"; };
+		EF98B955217E95D0006AB9AF /* ListFetchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListFetchService.h; sourceTree = "<group>"; };
+		EF98B956217E95D0006AB9AF /* ListFetchService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListFetchService.m; sourceTree = "<group>"; };
+		EFB32491217FDE77005BA90A /* ListCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListCellModel.h; sourceTree = "<group>"; };
+		EFB32492217FDE77005BA90A /* ListCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCellModel.m; sourceTree = "<group>"; };
+		EFB32498217FE29F005BA90A /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		EFB3249A217FE49F005BA90A /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		EFB3249B217FE56F005BA90A /* Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		EFB3249C217FE56F005BA90A /* Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		F85E4C2FD26341B2A125317F /* Pods-OrganizationsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMap/Pods-OrganizationsMap.debug.xcconfig"; sourceTree = "<group>"; };
+		F94A9C1FFAC17FD7322E6C42 /* Pods-OrganizationsMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMapTests/Pods-OrganizationsMapTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AC3EAF2A662C90E0E07183 /* libPods-OrganizationsMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE71FEC519951864DB397C1 /* libPods-OrganizationsMapTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0F91F2607C48DE53432A4C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57C0599487B022BFD74A4F27 /* Pods-OrganizationsMap.debug.xcconfig */,
+				5FA1960BAEABEFDBC340BEA9 /* Pods-OrganizationsMap.release.xcconfig */,
+				BE087EC2D691A075B9A0A9D7 /* Pods-OrganizationsMapTests.debug.xcconfig */,
+				430C2C5547097340B6FDF47C /* Pods-OrganizationsMapTests.release.xcconfig */,
+				F85E4C2FD26341B2A125317F /* Pods-OrganizationsMap.debug.xcconfig */,
+				5AFBAA196DD54B6133FF375E /* Pods-OrganizationsMap.release.xcconfig */,
+				4FA86AD248266DF65D7F7554 /* Pods-OrganizationsMapTests.debug.xcconfig */,
+				F94A9C1FFAC17FD7322E6C42 /* Pods-OrganizationsMapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF6F2E50217E150300207983 = {
 			isa = PBXGroup;
 			children = (
 				EF6F2E5B217E150300207983 /* OrganizationsMap */,
 				EF6F2E74217E150400207983 /* OrganizationsMapTests */,
 				EF6F2E5A217E150300207983 /* Products */,
+				EF98B926217E193C006AB9AF /* Frameworks */,
+				B0F91F2607C48DE53432A4C8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +131,11 @@
 		EF6F2E5B217E150300207983 /* OrganizationsMap */ = {
 			isa = PBXGroup;
 			children = (
+				EF760656217FF0F6002CAF7A /* Categories */,
+				EF98B954217E92A8006AB9AF /* Redux */,
+				EF98B942217E7B29006AB9AF /* UI */,
 				EF6F2E5C217E150300207983 /* AppDelegate.h */,
 				EF6F2E5D217E150300207983 /* AppDelegate.m */,
-				EF6F2E5F217E150300207983 /* ViewController.h */,
-				EF6F2E60217E150300207983 /* ViewController.m */,
-				EF6F2E62217E150300207983 /* Main.storyboard */,
 				EF6F2E65217E150400207983 /* Assets.xcassets */,
 				EF6F2E67217E150400207983 /* LaunchScreen.storyboard */,
 				EF6F2E6A217E150400207983 /* Info.plist */,
@@ -103,6 +153,101 @@
 			path = OrganizationsMapTests;
 			sourceTree = "<group>";
 		};
+		EF760656217FF0F6002CAF7A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EF760657217FF119002CAF7A /* UIApplication+Accessor.h */,
+				EF760658217FF119002CAF7A /* UIApplication+Accessor.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EF98B926217E193C006AB9AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B4B6AB8DB48280BAEFBD9C2 /* libPods-OrganizationsMap.a */,
+				5FBDBF25080325D1033F4071 /* libPods-OrganizationsMapTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF98B942217E7B29006AB9AF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EF98B952217E925E006AB9AF /* Main */,
+				EF98B94A217E7B3C006AB9AF /* Map */,
+				EF98B949217E7B33006AB9AF /* List */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EF98B949217E7B33006AB9AF /* List */ = {
+			isa = PBXGroup;
+			children = (
+				EFB3248A217FDE5F005BA90A /* Model */,
+				EF98B953217E928E006AB9AF /* Service */,
+				EF98B951217E9245006AB9AF /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		EF98B94A217E7B3C006AB9AF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		EF98B951217E9245006AB9AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF98B94B217E7B66006AB9AF /* ListTableViewController.h */,
+				EF98B94C217E7B66006AB9AF /* ListTableViewController.m */,
+				EF98B94E217E7D33006AB9AF /* OrganizationCell.h */,
+				EF98B94F217E7D33006AB9AF /* OrganizationCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF98B952217E925E006AB9AF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF98B92C217E22AB006AB9AF /* MainViewController.h */,
+				EF98B92D217E22AB006AB9AF /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF98B953217E928E006AB9AF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EF98B955217E95D0006AB9AF /* ListFetchService.h */,
+				EF98B956217E95D0006AB9AF /* ListFetchService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EF98B954217E92A8006AB9AF /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				EFB32498217FE29F005BA90A /* Action.h */,
+				EFB3249A217FE49F005BA90A /* State.h */,
+				EF760655217FEB7C002CAF7A /* StoreSubscriber.h */,
+				EFB3249B217FE56F005BA90A /* Store.h */,
+				EFB3249C217FE56F005BA90A /* Store.m */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		EFB3248A217FDE5F005BA90A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFB32491217FDE77005BA90A /* ListCellModel.h */,
+				EFB32492217FDE77005BA90A /* ListCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF6F2E7A217E150400207983 /* Build configuration list for PBXNativeTarget "OrganizationsMap" */;
 			buildPhases = (
+				43921E7F519C84C2B43A01C9 /* [CP] Check Pods Manifest.lock */,
 				EF6F2E55217E150300207983 /* Sources */,
 				EF6F2E56217E150300207983 /* Frameworks */,
 				EF6F2E57217E150300207983 /* Resources */,
@@ -127,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF6F2E7D217E150400207983 /* Build configuration list for PBXNativeTarget "OrganizationsMapTests" */;
 			buildPhases = (
+				0BF8AB1B01212F7419FCCBD1 /* [CP] Check Pods Manifest.lock */,
 				EF6F2E6D217E150400207983 /* Sources */,
 				EF6F2E6E217E150400207983 /* Frameworks */,
 				EF6F2E6F217E150400207983 /* Resources */,
@@ -185,7 +332,6 @@
 			files = (
 				EF6F2E69217E150400207983 /* LaunchScreen.storyboard in Resources */,
 				EF6F2E66217E150400207983 /* Assets.xcassets in Resources */,
-				EF6F2E64217E150300207983 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,14 +344,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BF8AB1B01212F7419FCCBD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrganizationsMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43921E7F519C84C2B43A01C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrganizationsMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF6F2E55217E150300207983 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6F2E61217E150300207983 /* ViewController.m in Sources */,
+				EF98B957217E95D0006AB9AF /* ListFetchService.m in Sources */,
+				EF98B950217E7D33006AB9AF /* OrganizationCell.m in Sources */,
 				EF6F2E6C217E150400207983 /* main.m in Sources */,
+				EFB32493217FDE77005BA90A /* ListCellModel.m in Sources */,
 				EF6F2E5E217E150300207983 /* AppDelegate.m in Sources */,
+				EF98B92E217E22AB006AB9AF /* MainViewController.m in Sources */,
+				EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */,
+				EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */,
+				EFB3249D217FE56F005BA90A /* Store.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,14 +419,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EF6F2E62217E150300207983 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF6F2E63217E150300207983 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EF6F2E67217E150400207983 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -351,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -361,40 +544,53 @@
 		};
 		EF6F2E7B217E150400207983 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C0599487B022BFD74A4F27 /* Pods-OrganizationsMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GK5XJBLF5J;
+				GCC_WARN_UNUSED_VALUE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OrganizationsMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "my-night.OrganizationsMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		EF6F2E7C217E150400207983 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA1960BAEABEFDBC340BEA9 /* Pods-OrganizationsMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GK5XJBLF5J;
+				GCC_WARN_UNUSED_VALUE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OrganizationsMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "my-night.OrganizationsMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		EF6F2E7E217E150400207983 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE087EC2D691A075B9A0A9D7 /* Pods-OrganizationsMapTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -414,6 +610,7 @@
 		};
 		EF6F2E7F217E150400207983 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430C2C5547097340B6FDF47C /* Pods-OrganizationsMapTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

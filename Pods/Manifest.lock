@@ -1,0 +1,26 @@
+PODS:
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - Masonry (1.1.0)
+  - ReactiveObjC (3.1.0)
+
+DEPENDENCIES:
+  - Mantle
+  - Masonry
+  - ReactiveObjC
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Mantle
+    - Masonry
+    - ReactiveObjC
+
+SPEC CHECKSUMS:
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+
+PODFILE CHECKSUM: 93ca631828a68cae2869cc6d5699745625e82e25
+
+COCOAPODS: 1.6.0.beta.1
