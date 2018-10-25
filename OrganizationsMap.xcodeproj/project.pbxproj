@@ -15,6 +15,10 @@
 		EF6F2E6C217E150400207983 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E6B217E150400207983 /* main.m */; };
 		EF6F2E76217E150400207983 /* OrganizationsMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E75217E150400207983 /* OrganizationsMapTests.m */; };
 		EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF760658217FF119002CAF7A /* UIApplication+Accessor.m */; };
+		EF7606672180DE85002CAF7A /* ListDTOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7606662180DE84002CAF7A /* ListDTOModel.m */; };
+		EF76066C2180DF6B002CAF7A /* MainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76066B2180DF6B002CAF7A /* MainStore.m */; };
+		EF76066F2180E099002CAF7A /* MainState.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76066E2180E099002CAF7A /* MainState.m */; };
+		EF760672218132DB002CAF7A /* FetchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF760671218132DB002CAF7A /* FetchAction.m */; };
 		EF98B92E217E22AB006AB9AF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B92D217E22AB006AB9AF /* MainViewController.m */; };
 		EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B94C217E7B66006AB9AF /* ListTableViewController.m */; };
 		EF98B950217E7D33006AB9AF /* OrganizationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B94F217E7D33006AB9AF /* OrganizationCell.m */; };
@@ -55,6 +59,14 @@
 		EF760655217FEB7C002CAF7A /* StoreSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSubscriber.h; sourceTree = "<group>"; };
 		EF760657217FF119002CAF7A /* UIApplication+Accessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Accessor.h"; sourceTree = "<group>"; };
 		EF760658217FF119002CAF7A /* UIApplication+Accessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Accessor.m"; sourceTree = "<group>"; };
+		EF7606652180DE84002CAF7A /* ListDTOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListDTOModel.h; sourceTree = "<group>"; };
+		EF7606662180DE84002CAF7A /* ListDTOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListDTOModel.m; sourceTree = "<group>"; };
+		EF76066A2180DF6B002CAF7A /* MainStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainStore.h; sourceTree = "<group>"; };
+		EF76066B2180DF6B002CAF7A /* MainStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainStore.m; sourceTree = "<group>"; };
+		EF76066D2180E099002CAF7A /* MainState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainState.h; sourceTree = "<group>"; };
+		EF76066E2180E099002CAF7A /* MainState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainState.m; sourceTree = "<group>"; };
+		EF760670218132DB002CAF7A /* FetchAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchAction.h; sourceTree = "<group>"; };
+		EF760671218132DB002CAF7A /* FetchAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchAction.m; sourceTree = "<group>"; };
 		EF98B92C217E22AB006AB9AF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		EF98B92D217E22AB006AB9AF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		EF98B94B217E7B66006AB9AF /* ListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
@@ -162,6 +174,28 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		EF7606682180DF48002CAF7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF98B92C217E22AB006AB9AF /* MainViewController.h */,
+				EF98B92D217E22AB006AB9AF /* MainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF7606692180DF55002CAF7A /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				EF76066A2180DF6B002CAF7A /* MainStore.h */,
+				EF76066B2180DF6B002CAF7A /* MainStore.m */,
+				EF76066D2180E099002CAF7A /* MainState.h */,
+				EF76066E2180E099002CAF7A /* MainState.m */,
+				EF760670218132DB002CAF7A /* FetchAction.h */,
+				EF760671218132DB002CAF7A /* FetchAction.m */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
 		EF98B926217E193C006AB9AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +246,8 @@
 		EF98B952217E925E006AB9AF /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				EF98B92C217E22AB006AB9AF /* MainViewController.h */,
-				EF98B92D217E22AB006AB9AF /* MainViewController.m */,
+				EF7606692180DF55002CAF7A /* Redux */,
+				EF7606682180DF48002CAF7A /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -244,6 +278,8 @@
 			children = (
 				EFB32491217FDE77005BA90A /* ListCellModel.h */,
 				EFB32492217FDE77005BA90A /* ListCellModel.m */,
+				EF7606652180DE84002CAF7A /* ListDTOModel.h */,
+				EF7606662180DE84002CAF7A /* ListDTOModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,7 +430,11 @@
 				EFB32493217FDE77005BA90A /* ListCellModel.m in Sources */,
 				EF6F2E5E217E150300207983 /* AppDelegate.m in Sources */,
 				EF98B92E217E22AB006AB9AF /* MainViewController.m in Sources */,
+				EF76066C2180DF6B002CAF7A /* MainStore.m in Sources */,
+				EF760672218132DB002CAF7A /* FetchAction.m in Sources */,
 				EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */,
+				EF76066F2180E099002CAF7A /* MainState.m in Sources */,
+				EF7606672180DE85002CAF7A /* ListDTOModel.m in Sources */,
 				EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */,
 				EFB3249D217FE56F005BA90A /* Store.m in Sources */,
 			);

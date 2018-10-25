@@ -5,6 +5,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol Action <NSObject>
 @property(nonatomic, copy, readonly) NSString *identifier;
 @property(nonatomic, strong, readonly, nullable) id payload;
+- (void)start;
 @end
 
 NS_ASSUME_NONNULL_END
