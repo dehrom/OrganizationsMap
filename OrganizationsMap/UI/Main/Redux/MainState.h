@@ -1,3 +1,4 @@
+#import <MapKit/MapKit.h>
 #import <UIKit/UIKit.h>
 #import "State.h"
 
@@ -5,8 +6,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+  StateLoading,
+  StateSuccess,
+  StateFailure,
+} MainStateStatus;
+
 @interface MainState : NSObject <State>
-@property(strong, nonatomic, nonnull) NSArray<ListCellModel *> *data;
+@property(assign, nonatomic) MainStateStatus status;
+@property(strong, nonatomic, nonnull) NSMutableArray<ListCellModel *> *data;
+@property(strong, nonatomic, nonnull) NSMutableArray<MKMapItem *> *mapItems;
 @end
 
 NS_ASSUME_NONNULL_END

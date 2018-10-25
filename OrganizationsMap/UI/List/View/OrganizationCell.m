@@ -27,8 +27,7 @@
   _titleLabel.numberOfLines = 1;
 
   _descriptionLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-  _descriptionLabel.font =
-      [UIFont systemFontOfSize:14 weight:UIFontWeightLight];
+  _descriptionLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightLight];
   _descriptionLabel.numberOfLines = 1;
 }
 

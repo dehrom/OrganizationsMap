@@ -1,9 +1,14 @@
 #import "FetchAction.h"
 #import <ReactiveObjC.h>
 #import "ListFetchService.h"
+#import "MainStore.h"
+#import "PresentListAction.h"
+#import "UIApplication+Accessor.h"
 
 @interface FetchAction ()
+@property(nonatomic, strong, nullable) id payload;
 @property(strong, nonatomic) ListFetchService *fetchService;
+@property(strong, nonatomic) Store *store;
 @end
 
 @implementation FetchAction
@@ -11,19 +16,23 @@
 @synthesize payload;
 
 - (instancetype)init {
-    if (self = [super init]) {
-        identifier = NSStringFromClass([self class]);
-        _fetchService = [ListFetchService new];
-    }
-    return self;
+  if (self = [super init]) {
+    identifier = NSStringFromClass([self class]);
+    _store = [[UIApplication sharedApplication] mainStore];
+    _fetchService = [ListFetchService new];
+  }
+  return self;
 }
 
 - (void)start {
-    [[[[self.fetchService fetch] flattenMap:^__kindof RACSignal * _Nullable(NSArray<ListDTOModel *> * _Nullable value) {
-        return [RACSignal return:@"res"];
-    }] deliverOn:[RACScheduler schedulerWithPriority:RACSchedulerPriorityBackground]] subscribeNext:^(NSString * _Nullable x) {
-        NSLog(@"%@", x);
-    }];
+  [[[[self.fetchService fetch]
+      map:^NSArray<ListCellModel *> *_Nullable(NSArray<ListDTOModel *> *_Nullable value) {
+        NSLog(@"%@", value);
+        return @[];
+      }] deliverOn:[RACScheduler mainThreadScheduler]]
+      subscribeNext:^(NSArray<ListCellModel *> *_Nullable x) {
+        [self.store dispatchAction:[[PresentListAction alloc] initWith:x]];
+      }];
 }
 
 @end

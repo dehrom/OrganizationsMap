@@ -1,4 +1,8 @@
 #import "AppDelegate.h"
+#import "ListTableViewController.h"
+#import "MainReducer.h"
+#import "MainState.h"
+#import "MainStore.h"
 #import "MainViewController.h"
 #import "Store.h"
 
@@ -11,8 +15,8 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   __auto_type controller = [[MainViewController alloc] init];
-  controller.viewControllers =
-      @ [[UIViewController new], [UIViewController new]];
+  self.store = [[MainStore alloc] initWith:[MainReducer new] state:[MainState new]];
+  controller.viewControllers = @ [[ListTableViewController new], [UIViewController new]];
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   self.window.rootViewController = controller;
   [self.window makeKeyAndVisible];

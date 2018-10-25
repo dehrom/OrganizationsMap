@@ -2,7 +2,7 @@
 #import "MainState.h"
 
 @implementation MainStore
-- (instancetype)initWith:(ReduceBlock)reducer state:(MainState *)initialState {
-    return [super initWith:reducer state:initialState];
+- (instancetype)initWith:(id<Reducer>)reducer state:(id<State>)initialState {
+  return [super initWith:reducer state:initialState];
 }
 @end
