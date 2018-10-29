@@ -15,15 +15,21 @@
 		EF6F2E6C217E150400207983 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E6B217E150400207983 /* main.m */; };
 		EF6F2E76217E150400207983 /* OrganizationsMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E75217E150400207983 /* OrganizationsMapTests.m */; };
 		EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF760658217FF119002CAF7A /* UIApplication+Accessor.m */; };
-		EF7606672180DE85002CAF7A /* ListDTOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7606662180DE84002CAF7A /* ListDTOModel.m */; };
+		EF7606672180DE85002CAF7A /* OrganizationDTOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7606662180DE84002CAF7A /* OrganizationDTOModel.m */; };
 		EF76066C2180DF6B002CAF7A /* MainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76066B2180DF6B002CAF7A /* MainStore.m */; };
 		EF76066F2180E099002CAF7A /* MainState.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76066E2180E099002CAF7A /* MainState.m */; };
 		EF760672218132DB002CAF7A /* FetchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF760671218132DB002CAF7A /* FetchAction.m */; };
 		EF7606752181B9B0002CAF7A /* MainReducer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7606742181B9B0002CAF7A /* MainReducer.m */; };
 		EF91A8AE218267E7000B7D88 /* PresentListAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8AD218267E7000B7D88 /* PresentListAction.m */; };
+		EF91A8B121835D4E000B7D88 /* ListFetchService_Local.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8B021835D4E000B7D88 /* ListFetchService_Local.m */; };
+		EF91A8B621836BFE000B7D88 /* organization.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF91A8B221835E49000B7D88 /* organization.txt */; };
+		EF91A8B921852AC5000B7D88 /* ListSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8B821852AC5000B7D88 /* ListSectionModel.m */; };
+		EF91A8C121852E22000B7D88 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8C021852E22000B7D88 /* MapViewController.m */; };
+		EF91A8C4218537FA000B7D88 /* VisitDTOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8C3218537FA000B7D88 /* VisitDTOModel.m */; };
+		EF91A8C821855711000B7D88 /* PresentMapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8C721855711000B7D88 /* PresentMapAction.m */; };
+		EF91A8CA2186E522000B7D88 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91A8C92186E522000B7D88 /* MapKit.framework */; };
 		EF98B92E217E22AB006AB9AF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B92D217E22AB006AB9AF /* MainViewController.m */; };
 		EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B94C217E7B66006AB9AF /* ListTableViewController.m */; };
-		EF98B950217E7D33006AB9AF /* OrganizationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B94F217E7D33006AB9AF /* OrganizationCell.m */; };
 		EF98B957217E95D0006AB9AF /* ListFetchService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B956217E95D0006AB9AF /* ListFetchService.m */; };
 		EFB32493217FDE77005BA90A /* ListCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB32492217FDE77005BA90A /* ListCellModel.m */; };
 		EFB3249D217FE56F005BA90A /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3249C217FE56F005BA90A /* Store.m */; };
@@ -61,8 +67,8 @@
 		EF760655217FEB7C002CAF7A /* StoreSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSubscriber.h; sourceTree = "<group>"; };
 		EF760657217FF119002CAF7A /* UIApplication+Accessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Accessor.h"; sourceTree = "<group>"; };
 		EF760658217FF119002CAF7A /* UIApplication+Accessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Accessor.m"; sourceTree = "<group>"; };
-		EF7606652180DE84002CAF7A /* ListDTOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListDTOModel.h; sourceTree = "<group>"; };
-		EF7606662180DE84002CAF7A /* ListDTOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListDTOModel.m; sourceTree = "<group>"; };
+		EF7606652180DE84002CAF7A /* OrganizationDTOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganizationDTOModel.h; sourceTree = "<group>"; };
+		EF7606662180DE84002CAF7A /* OrganizationDTOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizationDTOModel.m; sourceTree = "<group>"; };
 		EF76066A2180DF6B002CAF7A /* MainStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainStore.h; sourceTree = "<group>"; };
 		EF76066B2180DF6B002CAF7A /* MainStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainStore.m; sourceTree = "<group>"; };
 		EF76066D2180E099002CAF7A /* MainState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainState.h; sourceTree = "<group>"; };
@@ -74,12 +80,22 @@
 		EF7606762181BDB8002CAF7A /* Reducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reducer.h; sourceTree = "<group>"; };
 		EF91A8AC218267E7000B7D88 /* PresentListAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentListAction.h; sourceTree = "<group>"; };
 		EF91A8AD218267E7000B7D88 /* PresentListAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentListAction.m; sourceTree = "<group>"; };
+		EF91A8AF21835D4E000B7D88 /* ListFetchService_Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListFetchService_Local.h; sourceTree = "<group>"; };
+		EF91A8B021835D4E000B7D88 /* ListFetchService_Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListFetchService_Local.m; sourceTree = "<group>"; };
+		EF91A8B221835E49000B7D88 /* organization.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = organization.txt; sourceTree = "<group>"; };
+		EF91A8B721852AC5000B7D88 /* ListSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListSectionModel.h; sourceTree = "<group>"; };
+		EF91A8B821852AC5000B7D88 /* ListSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListSectionModel.m; sourceTree = "<group>"; };
+		EF91A8BF21852E22000B7D88 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		EF91A8C021852E22000B7D88 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		EF91A8C2218537FA000B7D88 /* VisitDTOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisitDTOModel.h; sourceTree = "<group>"; };
+		EF91A8C3218537FA000B7D88 /* VisitDTOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisitDTOModel.m; sourceTree = "<group>"; };
+		EF91A8C621855711000B7D88 /* PresentMapAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentMapAction.h; sourceTree = "<group>"; };
+		EF91A8C721855711000B7D88 /* PresentMapAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentMapAction.m; sourceTree = "<group>"; };
+		EF91A8C92186E522000B7D88 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EF98B92C217E22AB006AB9AF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		EF98B92D217E22AB006AB9AF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		EF98B94B217E7B66006AB9AF /* ListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
 		EF98B94C217E7B66006AB9AF /* ListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
-		EF98B94E217E7D33006AB9AF /* OrganizationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganizationCell.h; sourceTree = "<group>"; };
-		EF98B94F217E7D33006AB9AF /* OrganizationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizationCell.m; sourceTree = "<group>"; };
 		EF98B955217E95D0006AB9AF /* ListFetchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListFetchService.h; sourceTree = "<group>"; };
 		EF98B956217E95D0006AB9AF /* ListFetchService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListFetchService.m; sourceTree = "<group>"; };
 		EFB32491217FDE77005BA90A /* ListCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListCellModel.h; sourceTree = "<group>"; };
@@ -97,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF91A8CA2186E522000B7D88 /* MapKit.framework in Frameworks */,
 				C1AC3EAF2A662C90E0E07183 /* libPods-OrganizationsMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,15 +167,17 @@
 		EF6F2E5B217E150300207983 /* OrganizationsMap */ = {
 			isa = PBXGroup;
 			children = (
+				EF98B953217E928E006AB9AF /* Service */,
+				EFB3248A217FDE5F005BA90A /* Model */,
 				EF760656217FF0F6002CAF7A /* Categories */,
 				EF98B954217E92A8006AB9AF /* Redux */,
 				EF98B942217E7B29006AB9AF /* UI */,
 				EF6F2E5C217E150300207983 /* AppDelegate.h */,
 				EF6F2E5D217E150300207983 /* AppDelegate.m */,
-				EF6F2E65217E150400207983 /* Assets.xcassets */,
 				EF6F2E67217E150400207983 /* LaunchScreen.storyboard */,
 				EF6F2E6A217E150400207983 /* Info.plist */,
 				EF6F2E6B217E150400207983 /* main.m */,
+				EF91A8B521836BB7000B7D88 /* Resources */,
 			);
 			path = OrganizationsMap;
 			sourceTree = "<group>";
@@ -203,13 +222,45 @@
 				EF7606742181B9B0002CAF7A /* MainReducer.m */,
 				EF91A8AC218267E7000B7D88 /* PresentListAction.h */,
 				EF91A8AD218267E7000B7D88 /* PresentListAction.m */,
+				EF91A8C621855711000B7D88 /* PresentMapAction.h */,
+				EF91A8C721855711000B7D88 /* PresentMapAction.m */,
 			);
 			path = Redux;
+			sourceTree = "<group>";
+		};
+		EF91A8B521836BB7000B7D88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF6F2E65217E150400207983 /* Assets.xcassets */,
+				EF91A8B221835E49000B7D88 /* organization.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF91A8BB21852DD8000B7D88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF91A8BF21852E22000B7D88 /* MapViewController.h */,
+				EF91A8C021852E22000B7D88 /* MapViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF91A8C5218538C4000B7D88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFB32491217FDE77005BA90A /* ListCellModel.h */,
+				EFB32492217FDE77005BA90A /* ListCellModel.m */,
+				EF91A8B721852AC5000B7D88 /* ListSectionModel.h */,
+				EF91A8B821852AC5000B7D88 /* ListSectionModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EF98B926217E193C006AB9AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF91A8C92186E522000B7D88 /* MapKit.framework */,
 				5B4B6AB8DB48280BAEFBD9C2 /* libPods-OrganizationsMap.a */,
 				5FBDBF25080325D1033F4071 /* libPods-OrganizationsMapTests.a */,
 			);
@@ -229,8 +280,7 @@
 		EF98B949217E7B33006AB9AF /* List */ = {
 			isa = PBXGroup;
 			children = (
-				EFB3248A217FDE5F005BA90A /* Model */,
-				EF98B953217E928E006AB9AF /* Service */,
+				EF91A8C5218538C4000B7D88 /* Model */,
 				EF98B951217E9245006AB9AF /* View */,
 			);
 			path = List;
@@ -239,6 +289,7 @@
 		EF98B94A217E7B3C006AB9AF /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				EF91A8BB21852DD8000B7D88 /* View */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -248,8 +299,6 @@
 			children = (
 				EF98B94B217E7B66006AB9AF /* ListTableViewController.h */,
 				EF98B94C217E7B66006AB9AF /* ListTableViewController.m */,
-				EF98B94E217E7D33006AB9AF /* OrganizationCell.h */,
-				EF98B94F217E7D33006AB9AF /* OrganizationCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +317,8 @@
 			children = (
 				EF98B955217E95D0006AB9AF /* ListFetchService.h */,
 				EF98B956217E95D0006AB9AF /* ListFetchService.m */,
+				EF91A8AF21835D4E000B7D88 /* ListFetchService_Local.h */,
+				EF91A8B021835D4E000B7D88 /* ListFetchService_Local.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -288,10 +339,10 @@
 		EFB3248A217FDE5F005BA90A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EFB32491217FDE77005BA90A /* ListCellModel.h */,
-				EFB32492217FDE77005BA90A /* ListCellModel.m */,
-				EF7606652180DE84002CAF7A /* ListDTOModel.h */,
-				EF7606662180DE84002CAF7A /* ListDTOModel.m */,
+				EF7606652180DE84002CAF7A /* OrganizationDTOModel.h */,
+				EF7606662180DE84002CAF7A /* OrganizationDTOModel.m */,
+				EF91A8C2218537FA000B7D88 /* VisitDTOModel.h */,
+				EF91A8C3218537FA000B7D88 /* VisitDTOModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,6 +398,11 @@
 				TargetAttributes = {
 					EF6F2E58217E150300207983 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EF6F2E70217E150400207983 = {
 						CreatedOnToolsVersion = 10.0;
@@ -378,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF91A8B621836BFE000B7D88 /* organization.txt in Resources */,
 				EF6F2E69217E150400207983 /* LaunchScreen.storyboard in Resources */,
 				EF6F2E66217E150400207983 /* Assets.xcassets in Resources */,
 			);
@@ -437,9 +494,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF98B957217E95D0006AB9AF /* ListFetchService.m in Sources */,
-				EF98B950217E7D33006AB9AF /* OrganizationCell.m in Sources */,
 				EF6F2E6C217E150400207983 /* main.m in Sources */,
+				EF91A8C821855711000B7D88 /* PresentMapAction.m in Sources */,
 				EFB32493217FDE77005BA90A /* ListCellModel.m in Sources */,
+				EF91A8B121835D4E000B7D88 /* ListFetchService_Local.m in Sources */,
 				EF6F2E5E217E150300207983 /* AppDelegate.m in Sources */,
 				EF98B92E217E22AB006AB9AF /* MainViewController.m in Sources */,
 				EF91A8AE218267E7000B7D88 /* PresentListAction.m in Sources */,
@@ -448,7 +506,10 @@
 				EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */,
 				EF7606752181B9B0002CAF7A /* MainReducer.m in Sources */,
 				EF76066F2180E099002CAF7A /* MainState.m in Sources */,
-				EF7606672180DE85002CAF7A /* ListDTOModel.m in Sources */,
+				EF91A8B921852AC5000B7D88 /* ListSectionModel.m in Sources */,
+				EF7606672180DE85002CAF7A /* OrganizationDTOModel.m in Sources */,
+				EF91A8C121852E22000B7D88 /* MapViewController.m in Sources */,
+				EF91A8C4218537FA000B7D88 /* VisitDTOModel.m in Sources */,
 				EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */,
 				EFB3249D217FE56F005BA90A /* Store.m in Sources */,
 			);
@@ -692,7 +753,7 @@
 				EF6F2E79217E150400207983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EF6F2E7A217E150400207983 /* Build configuration list for PBXNativeTarget "OrganizationsMap" */ = {
 			isa = XCConfigurationList;
@@ -701,7 +762,7 @@
 				EF6F2E7C217E150400207983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EF6F2E7D217E150400207983 /* Build configuration list for PBXNativeTarget "OrganizationsMapTests" */ = {
 			isa = XCConfigurationList;
@@ -710,7 +771,7 @@
 				EF6F2E7F217E150400207983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

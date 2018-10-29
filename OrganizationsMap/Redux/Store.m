@@ -1,10 +1,11 @@
 #import "Store.h"
 #import "Action.h"
 #import "Reducer.h"
+#import "State.h"
 #import "StoreSubscriber.h"
 
 @interface Store ()
-@property(nonatomic, strong) id<State> state;
+@property(nonatomic, copy) id<State> state;
 @property(nonatomic, strong) NSHashTable<id<StoreSubscriber>> *subscribers;
 @property(nonatomic, copy) ReduceBlock reduceBlock;
 @property(nonatomic, strong) dispatch_queue_t workingQueue;
@@ -14,7 +15,7 @@
 
 - (instancetype)initWith:(id<Reducer>)reducer state:(id<State>)initialState {
   if (self = [super init]) {
-    _reduceBlock = [reducer createReducer];
+    _reduceBlock = [[reducer createReducer] copy];
     _state = initialState;
     _workingQueue = dispatch_queue_create("StoreQueue", DISPATCH_QUEUE_SERIAL);
     _subscribers = [NSHashTable weakObjectsHashTable];
@@ -27,7 +28,8 @@
     if ([action respondsToSelector:@selector(start)]) {
       [action start];
     }
-    id<State> newState = self.reduceBlock(self.state, action);
+    __auto_type newState = self.reduceBlock(self.state, action);
+    self.state = newState;
     dispatch_async(dispatch_get_main_queue(), ^{
       for (id<StoreSubscriber> subsciber in self.subscribers) {
         [subsciber newState:newState];

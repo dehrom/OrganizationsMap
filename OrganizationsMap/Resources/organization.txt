@@ -1,0 +1,14 @@
+[
+ {
+     "organizationId": "100",
+     "title": "Apple Infinite Loop",
+     "latitude": "-122.0341164",
+     "longitude": "37.3216204"
+ },
+ {
+     "organizationId": "101",
+     "title": "Google HQ",
+     "latitude": "-122.0928137",
+     "longitude": "37.423325"
+ }
+ ]

@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol State <NSCoding>
+@protocol State <NSCoding, NSCopying>
 @end
 
 NS_ASSUME_NONNULL_END

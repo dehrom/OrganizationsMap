@@ -8,7 +8,6 @@ target 'OrganizationsMap' do
 
   # Pods for OrganizationsMap
   pod 'ReactiveObjC'
-  pod 'Masonry'
   pod 'Mantle'
 
   target 'OrganizationsMapTests' do
