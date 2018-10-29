@@ -13,7 +13,6 @@
 #import "VisitDTOModel.h"
 
 @interface FetchAction ()
-@property(nonatomic, strong, nullable) id payload;
 @property(strong, nonatomic) ListFetchService *fetchService;
 @property(strong, nonatomic) Store *store;
 @end
