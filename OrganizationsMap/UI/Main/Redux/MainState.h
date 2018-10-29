@@ -10,11 +10,13 @@ typedef enum : NSUInteger {
   StateLoading,
   StateVisitsLoadedSuccess,
   StateOrganizationLoadedSuccess,
+  StateOrganizationSelected,
   StateFailure,
 } MainStateStatus;
 
 @interface MainState : NSObject <State>
 @property(assign, nonatomic) MainStateStatus status;
+@property(assign, nonatomic) NSUInteger selectedOrganizationIndex;
 @property(strong, nonatomic, nonnull) NSMutableArray<ListSectionModel *> *data;
 @property(strong, nonatomic, nonnull) NSMutableArray<MKPointAnnotation *> *mapItems;
 @end

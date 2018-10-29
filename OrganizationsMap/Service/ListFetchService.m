@@ -6,7 +6,8 @@
 #import "OrganizationDTOModel.h"
 #import "VisitDTOModel.h"
 
-static NSString *kOrganizationsListURL = @"https://demo1546967.mockable.io/organizations/getOrganizationListTest";
+static NSString *kOrganizationsListURL =
+    @"https://demo1546967.mockable.io/organizations/getOrganizationListTest";
 static NSString *kVisitsURL = @"https://demo1546967.mockable.io/organizationsMap/getVisitsListTest";
 
 @interface ListFetchService ()
@@ -56,7 +57,7 @@ static NSString *kVisitsURL = @"https://demo1546967.mockable.io/organizationsMap
   return result;
 }
 
-- (RACSignal<NSData *> *)loadWith:(NSURL *)url {
+    - (RACSignal<NSData *> *)loadWith : (NSURL *)url {
   return [[RACSignal createSignal:^RACDisposable *_Nullable(id<RACSubscriber> _Nonnull subscriber) {
     __auto_type task =
         [self.session dataTaskWithURL:url

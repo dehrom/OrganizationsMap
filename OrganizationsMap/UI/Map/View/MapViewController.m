@@ -1,6 +1,7 @@
 #import "MapViewController.h"
 #import <MapKit/MapKit.h>
 #import "MainState.h"
+#import "MapSelectAction.h"
 #import "Store.h"
 #import "StoreSubscriber.h"
 #import "UIApplication+Accessor.h"
@@ -10,12 +11,6 @@
 @end
 
 @implementation MapViewController
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-  if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-  }
-  return self;
-}
-
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.title = @"Organizations";
@@ -35,7 +30,7 @@
       [self configureMapWith:state.mapItems];
       break;
     case StateFailure:
-      NSLog(@"Failure");
+      NSLog(@"Map Failure");
       break;
     default:
       break;
@@ -47,12 +42,15 @@
 - (void)configureMapWith:(NSArray<MKPointAnnotation *> *)points {
   [self.mapView addAnnotations:points];
   [self.mapView showAnnotations:points animated:YES];
-    [self.mapView setCenterCoordinate:[points firstObject].coordinate animated:YES];
   __auto_type camera = [MKMapCamera cameraLookingAtCenterCoordinate:[points firstObject].coordinate
-                                                       fromDistance:12000
+                                                       fromDistance:0
                                                               pitch:0
                                                             heading:0];
   [self.mapView setCamera:camera animated:NO];
+  CLLocationDistance regionRadius = 5000;
+  __auto_type region = MKCoordinateRegionMakeWithDistance([points firstObject].coordinate,
+                                                          regionRadius, regionRadius);
+  [self.mapView setRegion:region animated:YES];
 }
 
 - (void)createViews {
@@ -67,6 +65,7 @@
 #pragma mark - MKMapViewDelegate
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+  [[[UIApplication sharedApplication] mainStore]
+      dispatchAction:[[MapSelectAction alloc] initWith:view.annotation.title]];
 }
-
 @end

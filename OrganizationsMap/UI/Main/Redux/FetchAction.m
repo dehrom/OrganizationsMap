@@ -51,6 +51,7 @@
   for (VisitDTOModel *visitDTO in second) {
     __auto_type annotation = [MKPointAnnotation alloc];
     annotation.coordinate = CLLocationCoordinate2DMake(visitDTO.latitude, visitDTO.longitude);
+    annotation.title = visitDTO.title;
     [coordinates addObject:annotation];
   }
   return [NSArray arrayWithArray:coordinates];

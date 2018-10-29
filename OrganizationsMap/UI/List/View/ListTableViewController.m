@@ -35,12 +35,17 @@
       NSLog(@"Loading");
       break;
     case StateOrganizationLoadedSuccess:
-      NSLog(@"Success list");
       self.models = state.data;
       [self.tableView reloadData];
       break;
+    case StateOrganizationSelected:
+      [self.tableView
+          scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0
+                                                    inSection:state.selectedOrganizationIndex]
+                atScrollPosition:UITableViewScrollPositionTop
+                        animated:YES];
     case StateFailure:
-      NSLog(@"Failure");
+      NSLog(@"List Failure");
       break;
     default:
       break;

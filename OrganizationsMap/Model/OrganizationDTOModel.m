@@ -25,8 +25,8 @@
 }
 
 + (NSValueTransformer *)organizationIdJSONTransformer {
-  return [MTLValueTransformer transformerUsingForwardBlock:
-          ^NSNumber *(NSString *value, BOOL *success, NSError *__autoreleasing *error) {
+  return [MTLValueTransformer transformerUsingForwardBlock:^NSNumber *(
+                                  NSString *value, BOOL *success, NSError *__autoreleasing *error) {
     return @(value.doubleValue);
   }];
 }

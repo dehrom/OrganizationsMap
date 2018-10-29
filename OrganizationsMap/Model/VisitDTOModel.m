@@ -26,22 +26,22 @@
 }
 
 + (NSValueTransformer *)organizationIdJSONTransformer {
-    return [MTLValueTransformer transformerUsingForwardBlock:
-            ^NSNumber *(NSString *value, BOOL *success, NSError *__autoreleasing *error) {
-        return @(value.doubleValue);
-    }];
+  return [MTLValueTransformer transformerUsingForwardBlock:^NSNumber *(
+                                  NSString *value, BOOL *success, NSError *__autoreleasing *error) {
+    return @(value.doubleValue);
+  }];
 }
 
 + (NSValueTransformer *)latitudeJSONTransformer {
-  return [MTLValueTransformer transformerUsingForwardBlock:
-          ^NSNumber *(NSString *value, BOOL *success, NSError *__autoreleasing *error) {
+  return [MTLValueTransformer transformerUsingForwardBlock:^NSNumber *(
+                                  NSString *value, BOOL *success, NSError *__autoreleasing *error) {
     return @(value.doubleValue);
   }];
 }
 
 + (NSValueTransformer *)longitudeJSONTransformer {
-  return [MTLValueTransformer transformerUsingForwardBlock:
-          ^NSNumber *(NSString *value, BOOL *success, NSError *__autoreleasing *error) {
+  return [MTLValueTransformer transformerUsingForwardBlock:^NSNumber *(
+                                  NSString *value, BOOL *success, NSError *__autoreleasing *error) {
     return @(value.doubleValue);
   }];
 }
