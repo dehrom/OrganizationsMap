@@ -3,6 +3,6 @@
 
 @implementation UIApplication (Accessor)
 - (Store *)mainStore {
-  return ((AppDelegate *)[[UIApplication sharedApplication] delegate]).store;
+    return ((AppDelegate *)[[UIApplication sharedApplication] delegate]).store;
 }
 @end

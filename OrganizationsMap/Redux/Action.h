@@ -3,7 +3,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol Action <NSObject>
-@property(nonatomic, strong, readonly, nullable) id payload;
+@property (nonatomic, strong, readonly, nullable) id payload;
 
 @optional
 - (void)start;

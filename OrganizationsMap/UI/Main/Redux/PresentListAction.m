@@ -5,9 +5,9 @@
 @synthesize payload;
 
 - (instancetype)initWith:(NSArray<ListSectionModel *> *)models {
-  if (self = [super init]) {
-    payload = [models copy];
-  }
-  return self;
+    if (self = [super init]) {
+        payload = [models copy];
+    }
+    return self;
 }
 @end

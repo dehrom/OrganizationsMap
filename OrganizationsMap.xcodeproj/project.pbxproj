@@ -21,6 +21,7 @@
 		EF760672218132DB002CAF7A /* FetchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF760671218132DB002CAF7A /* FetchAction.m */; };
 		EF7606752181B9B0002CAF7A /* MainReducer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7606742181B9B0002CAF7A /* MainReducer.m */; };
 		EF7614582187B79C00AF7D22 /* MapSelectAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7614572187B79C00AF7D22 /* MapSelectAction.m */; };
+		EF76145C218870CD00AF7D22 /* ListOrganizationSelectAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76145B218870CD00AF7D22 /* ListOrganizationSelectAction.m */; };
 		EF91A8AE218267E7000B7D88 /* PresentListAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8AD218267E7000B7D88 /* PresentListAction.m */; };
 		EF91A8B121835D4E000B7D88 /* ListFetchService_Local.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8B021835D4E000B7D88 /* ListFetchService_Local.m */; };
 		EF91A8B621836BFE000B7D88 /* organization.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF91A8B221835E49000B7D88 /* organization.txt */; };
@@ -81,6 +82,8 @@
 		EF7606762181BDB8002CAF7A /* Reducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reducer.h; sourceTree = "<group>"; };
 		EF7614562187B79C00AF7D22 /* MapSelectAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapSelectAction.h; sourceTree = "<group>"; };
 		EF7614572187B79C00AF7D22 /* MapSelectAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapSelectAction.m; sourceTree = "<group>"; };
+		EF76145A218870CD00AF7D22 /* ListOrganizationSelectAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListOrganizationSelectAction.h; sourceTree = "<group>"; };
+		EF76145B218870CD00AF7D22 /* ListOrganizationSelectAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListOrganizationSelectAction.m; sourceTree = "<group>"; };
 		EF91A8AC218267E7000B7D88 /* PresentListAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentListAction.h; sourceTree = "<group>"; };
 		EF91A8AD218267E7000B7D88 /* PresentListAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentListAction.m; sourceTree = "<group>"; };
 		EF91A8AF21835D4E000B7D88 /* ListFetchService_Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListFetchService_Local.h; sourceTree = "<group>"; };
@@ -243,6 +246,8 @@
 		EF7614592187BEB100AF7D22 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
+				EF76145A218870CD00AF7D22 /* ListOrganizationSelectAction.h */,
+				EF76145B218870CD00AF7D22 /* ListOrganizationSelectAction.m */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 				EF76066C2180DF6B002CAF7A /* MainStore.m in Sources */,
 				EF760672218132DB002CAF7A /* FetchAction.m in Sources */,
 				EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */,
+				EF76145C218870CD00AF7D22 /* ListOrganizationSelectAction.m in Sources */,
 				EF7606752181B9B0002CAF7A /* MainReducer.m in Sources */,
 				EF76066F2180E099002CAF7A /* MainState.m in Sources */,
 				EF91A8B921852AC5000B7D88 /* ListSectionModel.m in Sources */,

@@ -1,6 +1,6 @@
-#import "MapSelectAction.h"
+#import "ListOrganizationSelectAction.h"
 
-@implementation MapSelectAction
+@implementation ListOrganizationSelectAction
 @synthesize payload;
 
 - (instancetype)initWith:(NSString *)organizationName {

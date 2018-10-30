@@ -6,8 +6,8 @@
 @implementation MainViewController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  [[[UIApplication sharedApplication] mainStore] dispatchAction:[FetchAction new]];
+    [super viewDidLoad];
+    [[[UIApplication sharedApplication] mainStore] dispatchAction:[FetchAction new]];
 }
 
 @end

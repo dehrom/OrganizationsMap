@@ -5,10 +5,10 @@
 @synthesize payload;
 
 - (instancetype)initWith:(NSArray<MKPointAnnotation *> *)points {
-  if (self = [super init]) {
-    payload = [points copy];
-  }
-  return self;
+    if (self = [super init]) {
+        payload = [points copy];
+    }
+    return self;
 }
 
 @end
