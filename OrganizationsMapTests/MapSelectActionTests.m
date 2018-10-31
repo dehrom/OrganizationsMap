@@ -1,6 +1,7 @@
 #import <XCTest/XCTest.h>
 #import <Expecta.h>
 #import "FetchAction.h"
+#import "MapSelectAction.h"
 #import "ListFetchService_Local.h"
 #import "UIApplication+Accessor.h"
 #import "MainStore.h"
@@ -10,36 +11,28 @@
 #import "MapState.h"
 #import "MockSubscriber.h"
 
-@interface FetchActionTests : XCTestCase
+@interface MapSelectActionTests : XCTestCase
 @property (strong) MainStore *store;
-@property (strong, nonatomic) FetchAction *action;
+@property (strong) FetchAction *fetchAction;
+@property (strong, nonatomic) MapSelectAction *action;
 @property (strong) MockSubscriber *subscriber;
 @end
 
-@implementation FetchActionTests
+@implementation MapSelectActionTests
 - (void)setUp {
     self.store = [[UIApplication sharedApplication] mainStore];
-    self.action = [[FetchAction alloc] initWith:[ListFetchService_Local new]];
+    self.fetchAction = [[FetchAction alloc] initWith:[ListFetchService_Local new]];
+    self.action = [[MapSelectAction alloc] initWith:@"Google HQ"];
     self.subscriber = [MockSubscriber new];
 }
 
-- (void)testFetchOrganizations {
-    // when
+- (void)testMapSelect {
     [self.store subscribeWith:self.subscriber stateSelectBlock:^id<State> _Nonnull(MainState * _Nonnull state) {
         return state.listState;
     }];
+    [self.store dispatchAction:self.fetchAction];
     [self.store dispatchAction:self.action];
-    // then
-    expect(self.subscriber.state).willNot.beNil();
-}
-
-- (void)testFetchMapItems {
-    // when
-    [self.store subscribeWith:self.subscriber stateSelectBlock:^id<State> _Nonnull(MainState * _Nonnull state) {
-        return state.mapState;
-    }];
-    [self.store dispatchAction:self.action];
-    // then
-    expect(self.subscriber.state).willNot.beNil();
+     __auto_type listState = (ListState *)self.subscriber.state;
+    expect(listState.selectedOrganizationIndex).willNot.equal(-1);
 }
 @end

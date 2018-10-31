@@ -14,7 +14,7 @@
 #import "PresentableErrorAction.h"
 #import "State.h"
 
-static int kDefaultListOffset = 0;
+static int kDefaultListOffset = -1;
 // TODO: Split
 @implementation MainReducer
 - (ReduceBlock)createReducer {
