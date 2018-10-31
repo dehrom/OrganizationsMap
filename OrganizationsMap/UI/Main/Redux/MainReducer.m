@@ -15,7 +15,7 @@
 #import "State.h"
 
 static int kDefaultListOffset = 0;
-
+// TODO: Split
 @implementation MainReducer
 - (ReduceBlock)createReducer {
     return ^MainState *(MainState *_Nonnull state, id<Action> _Nonnull action) {
