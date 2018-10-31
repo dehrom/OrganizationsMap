@@ -7,9 +7,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ListFetchService : NSObject
-- (RACSignal<
-    RACTwoTuple<NSArray<OrganizationDTOModel *> *, NSArray<VisitDTOModel *> *> *> *)
-    fetch;
+- (RACSignal<RACTwoTuple<NSArray<OrganizationDTOModel *> *, NSArray<VisitDTOModel *> *> *> *)fetch;
 @end
 
 NS_ASSUME_NONNULL_END

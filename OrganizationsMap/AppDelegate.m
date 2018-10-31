@@ -5,7 +5,6 @@
 #import "MainStore.h"
 #import "MainViewController.h"
 #import "MapViewController.h"
-#import "Store.h"
 
 @interface AppDelegate ()
 
@@ -14,11 +13,11 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    __auto_type controller = [[MainViewController alloc] init];
     self.store = [[MainStore alloc] initWith:[MainReducer new] state:[MainState new]];
-    // controller.viewControllers = @ [[ListTableViewController new],
-    // [UIViewController new]];
+
+    __auto_type controller = [[MainViewController alloc] init];
     controller.viewControllers = [self createPair];
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];

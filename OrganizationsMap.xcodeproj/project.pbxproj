@@ -22,9 +22,11 @@
 		EF7606752181B9B0002CAF7A /* MainReducer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7606742181B9B0002CAF7A /* MainReducer.m */; };
 		EF7614582187B79C00AF7D22 /* MapSelectAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7614572187B79C00AF7D22 /* MapSelectAction.m */; };
 		EF76145C218870CD00AF7D22 /* ListOrganizationSelectAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76145B218870CD00AF7D22 /* ListOrganizationSelectAction.m */; };
+		EF76145F218911F300AF7D22 /* ListState.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76145E218911F300AF7D22 /* ListState.m */; };
+		EF761462218919F200AF7D22 /* MapState.m in Sources */ = {isa = PBXBuildFile; fileRef = EF761461218919F200AF7D22 /* MapState.m */; };
+		EF76146521893DB900AF7D22 /* PresentableErrorAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76146421893DB900AF7D22 /* PresentableErrorAction.m */; };
 		EF91A8AE218267E7000B7D88 /* PresentListAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8AD218267E7000B7D88 /* PresentListAction.m */; };
 		EF91A8B121835D4E000B7D88 /* ListFetchService_Local.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8B021835D4E000B7D88 /* ListFetchService_Local.m */; };
-		EF91A8B621836BFE000B7D88 /* organization.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF91A8B221835E49000B7D88 /* organization.txt */; };
 		EF91A8B921852AC5000B7D88 /* ListSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8B821852AC5000B7D88 /* ListSectionModel.m */; };
 		EF91A8C121852E22000B7D88 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8C021852E22000B7D88 /* MapViewController.m */; };
 		EF91A8C4218537FA000B7D88 /* VisitDTOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91A8C3218537FA000B7D88 /* VisitDTOModel.m */; };
@@ -34,7 +36,6 @@
 		EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B94C217E7B66006AB9AF /* ListTableViewController.m */; };
 		EF98B957217E95D0006AB9AF /* ListFetchService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B956217E95D0006AB9AF /* ListFetchService.m */; };
 		EFB32493217FDE77005BA90A /* ListCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB32492217FDE77005BA90A /* ListCellModel.m */; };
-		EFB3249D217FE56F005BA90A /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3249C217FE56F005BA90A /* Store.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,11 +85,17 @@
 		EF7614572187B79C00AF7D22 /* MapSelectAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapSelectAction.m; sourceTree = "<group>"; };
 		EF76145A218870CD00AF7D22 /* ListOrganizationSelectAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListOrganizationSelectAction.h; sourceTree = "<group>"; };
 		EF76145B218870CD00AF7D22 /* ListOrganizationSelectAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListOrganizationSelectAction.m; sourceTree = "<group>"; };
+		EF76145D218911F300AF7D22 /* ListState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListState.h; sourceTree = "<group>"; };
+		EF76145E218911F300AF7D22 /* ListState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListState.m; sourceTree = "<group>"; };
+		EF761460218919F200AF7D22 /* MapState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapState.h; sourceTree = "<group>"; };
+		EF761461218919F200AF7D22 /* MapState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapState.m; sourceTree = "<group>"; };
+		EF76146321893DB900AF7D22 /* PresentableErrorAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentableErrorAction.h; sourceTree = "<group>"; };
+		EF76146421893DB900AF7D22 /* PresentableErrorAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentableErrorAction.m; sourceTree = "<group>"; };
+		EF761466218942EF00AF7D22 /* FetchingError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchingError.h; sourceTree = "<group>"; };
 		EF91A8AC218267E7000B7D88 /* PresentListAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentListAction.h; sourceTree = "<group>"; };
 		EF91A8AD218267E7000B7D88 /* PresentListAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentListAction.m; sourceTree = "<group>"; };
 		EF91A8AF21835D4E000B7D88 /* ListFetchService_Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListFetchService_Local.h; sourceTree = "<group>"; };
 		EF91A8B021835D4E000B7D88 /* ListFetchService_Local.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListFetchService_Local.m; sourceTree = "<group>"; };
-		EF91A8B221835E49000B7D88 /* organization.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = organization.txt; sourceTree = "<group>"; };
 		EF91A8B721852AC5000B7D88 /* ListSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListSectionModel.h; sourceTree = "<group>"; };
 		EF91A8B821852AC5000B7D88 /* ListSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListSectionModel.m; sourceTree = "<group>"; };
 		EF91A8BF21852E22000B7D88 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -108,8 +115,6 @@
 		EFB32492217FDE77005BA90A /* ListCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCellModel.m; sourceTree = "<group>"; };
 		EFB32498217FE29F005BA90A /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
 		EFB3249A217FE49F005BA90A /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
-		EFB3249B217FE56F005BA90A /* Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
-		EFB3249C217FE56F005BA90A /* Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		F85E4C2FD26341B2A125317F /* Pods-OrganizationsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMap/Pods-OrganizationsMap.debug.xcconfig"; sourceTree = "<group>"; };
 		F94A9C1FFAC17FD7322E6C42 /* Pods-OrganizationsMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMapTests/Pods-OrganizationsMapTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,10 +231,8 @@
 				EF760671218132DB002CAF7A /* FetchAction.m */,
 				EF7606732181B9B0002CAF7A /* MainReducer.h */,
 				EF7606742181B9B0002CAF7A /* MainReducer.m */,
-				EF91A8AC218267E7000B7D88 /* PresentListAction.h */,
-				EF91A8AD218267E7000B7D88 /* PresentListAction.m */,
-				EF91A8C621855711000B7D88 /* PresentMapAction.h */,
-				EF91A8C721855711000B7D88 /* PresentMapAction.m */,
+				EF76146321893DB900AF7D22 /* PresentableErrorAction.h */,
+				EF76146421893DB900AF7D22 /* PresentableErrorAction.m */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -237,8 +240,12 @@
 		EF7614552187B77C00AF7D22 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
+				EF91A8C621855711000B7D88 /* PresentMapAction.h */,
+				EF91A8C721855711000B7D88 /* PresentMapAction.m */,
 				EF7614562187B79C00AF7D22 /* MapSelectAction.h */,
 				EF7614572187B79C00AF7D22 /* MapSelectAction.m */,
+				EF761460218919F200AF7D22 /* MapState.h */,
+				EF761461218919F200AF7D22 /* MapState.m */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -246,8 +253,12 @@
 		EF7614592187BEB100AF7D22 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
+				EF91A8AC218267E7000B7D88 /* PresentListAction.h */,
+				EF91A8AD218267E7000B7D88 /* PresentListAction.m */,
 				EF76145A218870CD00AF7D22 /* ListOrganizationSelectAction.h */,
 				EF76145B218870CD00AF7D22 /* ListOrganizationSelectAction.m */,
+				EF76145D218911F300AF7D22 /* ListState.h */,
+				EF76145E218911F300AF7D22 /* ListState.m */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -256,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				EF6F2E65217E150400207983 /* Assets.xcassets */,
-				EF91A8B221835E49000B7D88 /* organization.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -345,6 +355,7 @@
 				EF98B956217E95D0006AB9AF /* ListFetchService.m */,
 				EF91A8AF21835D4E000B7D88 /* ListFetchService_Local.h */,
 				EF91A8B021835D4E000B7D88 /* ListFetchService_Local.m */,
+				EF761466218942EF00AF7D22 /* FetchingError.h */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -355,8 +366,6 @@
 				EFB32498217FE29F005BA90A /* Action.h */,
 				EFB3249A217FE49F005BA90A /* State.h */,
 				EF760655217FEB7C002CAF7A /* StoreSubscriber.h */,
-				EFB3249B217FE56F005BA90A /* Store.h */,
-				EFB3249C217FE56F005BA90A /* Store.m */,
 				EF7606762181BDB8002CAF7A /* Reducer.h */,
 			);
 			path = Redux;
@@ -460,7 +469,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF91A8B621836BFE000B7D88 /* organization.txt in Resources */,
 				EF6F2E69217E150400207983 /* LaunchScreen.storyboard in Resources */,
 				EF6F2E66217E150400207983 /* Assets.xcassets in Resources */,
 			);
@@ -532,14 +540,16 @@
 				EF760672218132DB002CAF7A /* FetchAction.m in Sources */,
 				EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */,
 				EF76145C218870CD00AF7D22 /* ListOrganizationSelectAction.m in Sources */,
+				EF76146521893DB900AF7D22 /* PresentableErrorAction.m in Sources */,
 				EF7606752181B9B0002CAF7A /* MainReducer.m in Sources */,
 				EF76066F2180E099002CAF7A /* MainState.m in Sources */,
 				EF91A8B921852AC5000B7D88 /* ListSectionModel.m in Sources */,
 				EF7606672180DE85002CAF7A /* OrganizationDTOModel.m in Sources */,
 				EF91A8C121852E22000B7D88 /* MapViewController.m in Sources */,
+				EF761462218919F200AF7D22 /* MapState.m in Sources */,
 				EF91A8C4218537FA000B7D88 /* VisitDTOModel.m in Sources */,
 				EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */,
-				EFB3249D217FE56F005BA90A /* Store.m in Sources */,
+				EF76145F218911F300AF7D22 /* ListState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

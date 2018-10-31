@@ -1,11 +1,11 @@
 #import <UIKit/UIKit.h>
 
-@class Store;
+@class MainStore;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIApplication (Accessor)
-- (Store *)mainStore;
+- (MainStore *)mainStore;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,12 +1,15 @@
 #import "ListTableViewController.h"
+#import <UIKit/UIViewController.h>
+#import "Action.h"
+#import "FetchAction.h"
 #import "ListCellModel.h"
+#import "ListOrganizationSelectAction.h"
 #import "ListSectionModel.h"
+#import "ListState.h"
 #import "MainState.h"
-#import "Store.h"
+#import "MainStore.h"
 #import "StoreSubscriber.h"
 #import "UIApplication+Accessor.h"
-#import "ListOrganizationSelectAction.h"
-#import "Action.h"
 
 @interface ListTableViewController () <StoreSubscriber>
 @property (strong, nonatomic, nonnull) NSArray<ListSectionModel *> *models;
@@ -25,20 +28,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Events";
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     [self.tableView registerClass:[UITableViewCell class]
            forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
-    [[[UIApplication sharedApplication] mainStore] subscribeWith:self];
+    [[[UIApplication sharedApplication] mainStore] subscribeWith:self
+                                                stateSelectBlock:^id<State>(MainState *_Nonnull state) {
+                                                  return state.listState;
+                                                }];
 }
 
 #pragma mark - StoreSubscriber
 
-- (void)newState:(MainState *)state {
+- (void)newState:(ListState *)state {
+    [self.refreshControl endRefreshing];
     switch (state.status) {
-        case StateLoading:
-            NSLog(@"Loading");
-            break;
         case StateOrganizationLoadedSuccess:
-            self.models = state.data;
+            self.models = state.models;
             [self.tableView reloadData];
             break;
         case StateMapItemSelect:
@@ -50,11 +56,25 @@
                               animated:YES];
             break;
         case StateFailure:
-            NSLog(@"List Failure");
+            [self showError];
             break;
         default:
             break;
     }
+}
+
+#pragma mark - Private functions
+
+- (void)refresh {
+    [[[UIApplication sharedApplication] mainStore] dispatchAction:[FetchAction new]];
+}
+
+- (void)showError {
+    __auto_type vc = [UIAlertController alertControllerWithTitle:nil
+                                                         message:@"Ошибка отображения списка организаций"
+                                                  preferredStyle:UIAlertControllerStyleAlert];
+    [vc addAction:[UIAlertAction actionWithTitle:@"Закрыть" style:UIAlertActionStyleDestructive handler:nil]];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 #pragma mark - Table view data source

@@ -1,26 +1,17 @@
 #import <UIKit/UIKit.h>
 #import "State.h"
 
-@class ListSectionModel;
-@class MKPointAnnotation;
+@class ListState;
+@class MapState;
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef enum : NSUInteger {
-    StateLoading,
-    StateVisitsLoadedSuccess,
-    StateOrganizationLoadedSuccess,
-    StateMapItemSelect,
-    StateListItemSelect,
-    StateFailure,
-} MainStateStatus;
-
 @interface MainState : NSObject <State>
-@property (assign, nonatomic) MainStateStatus status;
-@property (assign, nonatomic) NSUInteger selectedOrganizationIndex;
-@property (strong, nonatomic, nullable) MKPointAnnotation *selectedOrganizationPoint;
-@property (strong, nonatomic, nonnull) NSMutableArray<ListSectionModel *> *data;
-@property (strong, nonatomic, nonnull) NSMutableArray<MKPointAnnotation *> *mapItems;
+@property (strong, nonatomic, nonnull, readonly) ListState *listState;
+@property (strong, nonatomic, nonnull, readonly) MapState *mapState;
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new;
+- (instancetype)initWithListState:(ListState *)listState MapState:(MapState *)mapState;
 @end
 
 NS_ASSUME_NONNULL_END

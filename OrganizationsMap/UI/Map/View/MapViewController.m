@@ -1,8 +1,9 @@
 #import "MapViewController.h"
 #import <MapKit/MapKit.h>
 #import "MainState.h"
+#import "MainStore.h"
 #import "MapSelectAction.h"
-#import "Store.h"
+#import "MapState.h"
 #import "StoreSubscriber.h"
 #import "UIApplication+Accessor.h"
 
@@ -16,21 +17,21 @@
     self.title = @"Organizations";
     [self createViews];
     [self addSubviews];
-    [[[UIApplication sharedApplication] mainStore] subscribeWith:self];
+    [[[UIApplication sharedApplication] mainStore] subscribeWith:self
+                                                stateSelectBlock:^id<State>(MainState *_Nonnull state) {
+                                                  return state.mapState;
+                                                }];
 }
 
 #pragma mark - StoreSubscriber
 
-- (void)newState:(MainState *)state {
+- (void)newState:(MapState *)state {
     switch (state.status) {
-        case StateLoading:
-            NSLog(@"Loading");
-            break;
         case StateVisitsLoadedSuccess:
-            [self configureMapWith:state.mapItems];
+            [self configureMapWith:state.models];
             break;
         case StateFailure:
-            NSLog(@"Map Failure");
+            [self showError];
             break;
         case StateListItemSelect:
             [self selectAnnotation:state.selectedOrganizationPoint];
@@ -41,6 +42,14 @@
 }
 
 #pragma mark - Private functions
+
+- (void)showError {
+    __auto_type vc = [UIAlertController alertControllerWithTitle:nil
+                                                         message:@"Ошибка отображения карты"
+                                                  preferredStyle:UIAlertControllerStyleAlert];
+    [vc addAction:[UIAlertAction actionWithTitle:@"Закрыть" style:UIAlertActionStyleDestructive handler:nil]];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (void)selectAnnotation:(MKPointAnnotation *)annotation {
     self.mapView.camera.centerCoordinate = annotation.coordinate;

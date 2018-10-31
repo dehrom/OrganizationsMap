@@ -2,10 +2,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol State;
 @protocol Action;
+@class MainState;
 
-typedef id<State> (^ReduceBlock)(id<State> state, id<Action> action);
+typedef MainState * (^ReduceBlock)(MainState *state, id<Action> action);
 @protocol Reducer <NSObject>
 - (ReduceBlock)createReducer;
 @end

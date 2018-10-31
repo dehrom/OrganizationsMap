@@ -4,8 +4,7 @@
 #import "VisitDTOModel.h"
 
 @implementation ListFetchService_Local
-- (RACSignal<
-    RACTwoTuple<NSArray<OrganizationDTOModel *> *, NSArray<VisitDTOModel *> *> *> *)
+- (RACSignal<RACTwoTuple<NSArray<OrganizationDTOModel *> *, NSArray<VisitDTOModel *> *> *> *)
     fetch {
     return [RACSignal zip:@[ [self fetchOrganizations], [self fetchVisits] ]
                    reduce:^id(NSArray<OrganizationDTOModel *> *coordinates,

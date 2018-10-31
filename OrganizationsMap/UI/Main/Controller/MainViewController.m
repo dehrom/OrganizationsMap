@@ -1,6 +1,6 @@
 #import "MainViewController.h"
 #import "FetchAction.h"
-#import "Store.h"
+#import "MainStore.h"
 #import "UIApplication+Accessor.h"
 
 @implementation MainViewController
