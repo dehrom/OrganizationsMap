@@ -37,13 +37,15 @@ static int kDefaultListOffset = -1;
 
         if ([action isKindOfClass:[PresentListAction class]]) {
             __auto_type listState = [[ListState alloc] initWithModels:action.payload
-                                                                index:kDefaultListOffset
+                                                                index:state.listState.selectedOrganizationIndex
                                                                status:StateOrganizationLoadedSuccess];
             return [[MainState alloc] initWithListState:listState MapState:[state.mapState copy]];
         }
 
         if ([action isKindOfClass:[PresentMapAction class]]) {
-            __auto_type mapState = [[MapState alloc] initWithModels:action.payload point:nil status:StateVisitsLoadedSuccess];
+            __auto_type mapState = [[MapState alloc] initWithModels:action.payload
+                                                              point:state.mapState.selectedOrganizationPoint
+                                                             status:StateVisitsLoadedSuccess];
             return [[MainState alloc] initWithListState:[state.listState copy] MapState:mapState];
         }
 

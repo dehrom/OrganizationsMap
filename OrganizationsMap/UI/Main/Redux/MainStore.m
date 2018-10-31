@@ -51,4 +51,8 @@
 - (void)unsubscribeWith:(id<StoreSubscriber>)subscriber {
     [self.subscribers removeObjectForKey:subscriber];
 }
+
+- (void)unsubscribeAll {
+    [self.subscribers removeAllObjects];
+}
 @end

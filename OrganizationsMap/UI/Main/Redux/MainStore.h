@@ -19,6 +19,7 @@ typedef id<State> _Nonnull (^StateSelectBlock)(MainState *);
 - (void)dispatchAction:(id<Action>)action;
 - (void)subscribeWith:(id<StoreSubscriber>)subscriber stateSelectBlock:(StateSelectBlock)block;
 - (void)unsubscribeWith:(id<StoreSubscriber>)subscriber;
+- (void)unsubscribeAll;
 @end
 
 NS_ASSUME_NONNULL_END

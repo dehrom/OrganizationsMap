@@ -23,6 +23,10 @@
     self.subscriber = [MockSubscriber new];
 }
 
+- (void)tearDown {
+    [self.store unsubscribeAll];
+}
+
 - (void)testFetchOrganizations {
     // when
     [self.store subscribeWith:self.subscriber stateSelectBlock:^id<State> _Nonnull(MainState * _Nonnull state) {

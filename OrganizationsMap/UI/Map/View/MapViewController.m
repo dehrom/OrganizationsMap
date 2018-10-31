@@ -8,14 +8,15 @@
 #import "UIApplication+Accessor.h"
 
 @interface MapViewController () <StoreSubscriber, MKMapViewDelegate>
-@property (strong, nonatomic) MKMapView *mapView;
+@property (weak, nonatomic) MKMapView *mapView;
 @end
 
 @implementation MapViewController
 - (void)loadView {
-    self.mapView = [MKMapView new];
-    self.mapView.delegate = self;
-    self.view = self.mapView;
+    __auto_type mapView = [MKMapView new];
+    mapView.delegate = self;
+    self.view = mapView;
+    self.mapView = mapView;
 }
 
 - (void)viewDidLoad {
@@ -23,7 +24,7 @@
     self.title = @"Organizations";
     [[[UIApplication sharedApplication] mainStore] subscribeWith:self
                                                 stateSelectBlock:^id<State>(MainState *_Nonnull state) {
-                                                    return state.mapState;
+                                                  return state.mapState;
                                                 }];
 }
 

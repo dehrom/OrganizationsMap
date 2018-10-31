@@ -13,7 +13,6 @@
 		EF6F2E66217E150400207983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6F2E65217E150400207983 /* Assets.xcassets */; };
 		EF6F2E69217E150400207983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6F2E67217E150400207983 /* LaunchScreen.storyboard */; };
 		EF6F2E6C217E150400207983 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E6B217E150400207983 /* main.m */; };
-		EF6F2E76217E150400207983 /* OrganizationsMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6F2E75217E150400207983 /* OrganizationsMapTests.m */; };
 		EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF760658217FF119002CAF7A /* UIApplication+Accessor.m */; };
 		EF7606672180DE85002CAF7A /* OrganizationDTOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7606662180DE84002CAF7A /* OrganizationDTOModel.m */; };
 		EF76066C2180DF6B002CAF7A /* MainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76066B2180DF6B002CAF7A /* MainStore.m */; };
@@ -39,6 +38,7 @@
 		EFD7D14B2189E1CD000783BE /* FetchActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D14A2189E1CD000783BE /* FetchActionTests.m */; };
 		EFD7D14F2189F04B000783BE /* MapSelectActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D14E2189F04B000783BE /* MapSelectActionTests.m */; };
 		EFD7D1522189F1F2000783BE /* MockSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D1512189F1F2000783BE /* MockSubscriber.m */; };
+		EFD7D1542189F4A3000783BE /* ListOrganizationSelectActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D1532189F4A3000783BE /* ListOrganizationSelectActionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,6 @@
 		EF6F2E6A217E150400207983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF6F2E6B217E150400207983 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EF6F2E71217E150400207983 /* OrganizationsMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrganizationsMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF6F2E75217E150400207983 /* OrganizationsMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizationsMapTests.m; sourceTree = "<group>"; };
 		EF6F2E77217E150400207983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF760655217FEB7C002CAF7A /* StoreSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSubscriber.h; sourceTree = "<group>"; };
 		EF760657217FF119002CAF7A /* UIApplication+Accessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Accessor.h"; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		EFD7D14E2189F04B000783BE /* MapSelectActionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapSelectActionTests.m; sourceTree = "<group>"; };
 		EFD7D1502189F1F2000783BE /* MockSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockSubscriber.h; sourceTree = "<group>"; };
 		EFD7D1512189F1F2000783BE /* MockSubscriber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockSubscriber.m; sourceTree = "<group>"; };
+		EFD7D1532189F4A3000783BE /* ListOrganizationSelectActionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListOrganizationSelectActionTests.m; sourceTree = "<group>"; };
 		F85E4C2FD26341B2A125317F /* Pods-OrganizationsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMap/Pods-OrganizationsMap.debug.xcconfig"; sourceTree = "<group>"; };
 		F94A9C1FFAC17FD7322E6C42 /* Pods-OrganizationsMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMapTests/Pods-OrganizationsMapTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,12 +204,12 @@
 		EF6F2E74217E150400207983 /* OrganizationsMapTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF6F2E75217E150400207983 /* OrganizationsMapTests.m */,
 				EF6F2E77217E150400207983 /* Info.plist */,
 				EFD7D14A2189E1CD000783BE /* FetchActionTests.m */,
 				EFD7D14E2189F04B000783BE /* MapSelectActionTests.m */,
 				EFD7D1502189F1F2000783BE /* MockSubscriber.h */,
 				EFD7D1512189F1F2000783BE /* MockSubscriber.m */,
+				EFD7D1532189F4A3000783BE /* ListOrganizationSelectActionTests.m */,
 			);
 			path = OrganizationsMapTests;
 			sourceTree = "<group>";
@@ -573,7 +573,7 @@
 				EFD7D14F2189F04B000783BE /* MapSelectActionTests.m in Sources */,
 				EFD7D1522189F1F2000783BE /* MockSubscriber.m in Sources */,
 				EFD7D14B2189E1CD000783BE /* FetchActionTests.m in Sources */,
-				EF6F2E76217E150400207983 /* OrganizationsMapTests.m in Sources */,
+				EFD7D1542189F4A3000783BE /* ListOrganizationSelectActionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
