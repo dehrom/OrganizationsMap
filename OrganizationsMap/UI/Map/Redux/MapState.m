@@ -19,6 +19,5 @@
 
 - (id)copy {
     return [[MapState alloc] initWithModels:self.models point:self.selectedOrganizationPoint status:StateNoChanges];
-    ;
 }
 @end

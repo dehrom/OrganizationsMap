@@ -12,14 +12,18 @@
 @end
 
 @implementation MapViewController
+- (void)loadView {
+    self.mapView = [MKMapView new];
+    self.mapView.delegate = self;
+    self.view = self.mapView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Organizations";
-    [self createViews];
-    [self addSubviews];
     [[[UIApplication sharedApplication] mainStore] subscribeWith:self
                                                 stateSelectBlock:^id<State>(MainState *_Nonnull state) {
-                                                  return state.mapState;
+                                                    return state.mapState;
                                                 }];
 }
 
@@ -53,9 +57,6 @@
 
 - (void)selectAnnotation:(MKPointAnnotation *)annotation {
     self.mapView.camera.centerCoordinate = annotation.coordinate;
-    self.mapView.camera.altitude = 5000;
-    self.mapView.camera.pitch = 0;
-    self.mapView.camera.heading = 0;
     [self.mapView selectAnnotation:annotation animated:YES];
 }
 
@@ -67,15 +68,6 @@
                                                                 pitch:0
                                                               heading:0];
     [self.mapView setCamera:camera animated:NO];
-}
-
-- (void)createViews {
-    self.mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
-    self.mapView.delegate = self;
-}
-
-- (void)addSubviews {
-    [self.view addSubview:self.mapView];
 }
 
 #pragma mark - MKMapViewDelegate
