@@ -18,7 +18,6 @@
 		EF76066C2180DF6B002CAF7A /* MainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76066B2180DF6B002CAF7A /* MainStore.m */; };
 		EF76066F2180E099002CAF7A /* MainState.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76066E2180E099002CAF7A /* MainState.m */; };
 		EF760672218132DB002CAF7A /* FetchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF760671218132DB002CAF7A /* FetchAction.m */; };
-		EF7606752181B9B0002CAF7A /* MainReducer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7606742181B9B0002CAF7A /* MainReducer.m */; };
 		EF7614582187B79C00AF7D22 /* MapSelectAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7614572187B79C00AF7D22 /* MapSelectAction.m */; };
 		EF76145C218870CD00AF7D22 /* ListOrganizationSelectAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76145B218870CD00AF7D22 /* ListOrganizationSelectAction.m */; };
 		EF76145F218911F300AF7D22 /* ListState.m in Sources */ = {isa = PBXBuildFile; fileRef = EF76145E218911F300AF7D22 /* ListState.m */; };
@@ -39,6 +38,8 @@
 		EFD7D14F2189F04B000783BE /* MapSelectActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D14E2189F04B000783BE /* MapSelectActionTests.m */; };
 		EFD7D1522189F1F2000783BE /* MockSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D1512189F1F2000783BE /* MockSubscriber.m */; };
 		EFD7D1542189F4A3000783BE /* ListOrganizationSelectActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D1532189F4A3000783BE /* ListOrganizationSelectActionTests.m */; };
+		EFD7D157218A15EB000783BE /* MapReducer.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D156218A15EB000783BE /* MapReducer.m */; };
+		EFD7D15A218A18A9000783BE /* ListReducer.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D159218A18A9000783BE /* ListReducer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +81,6 @@
 		EF76066E2180E099002CAF7A /* MainState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainState.m; sourceTree = "<group>"; };
 		EF760670218132DB002CAF7A /* FetchAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchAction.h; sourceTree = "<group>"; };
 		EF760671218132DB002CAF7A /* FetchAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchAction.m; sourceTree = "<group>"; };
-		EF7606732181B9B0002CAF7A /* MainReducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainReducer.h; sourceTree = "<group>"; };
-		EF7606742181B9B0002CAF7A /* MainReducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainReducer.m; sourceTree = "<group>"; };
 		EF7606762181BDB8002CAF7A /* Reducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reducer.h; sourceTree = "<group>"; };
 		EF7614562187B79C00AF7D22 /* MapSelectAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapSelectAction.h; sourceTree = "<group>"; };
 		EF7614572187B79C00AF7D22 /* MapSelectAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapSelectAction.m; sourceTree = "<group>"; };
@@ -123,6 +122,10 @@
 		EFD7D1502189F1F2000783BE /* MockSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockSubscriber.h; sourceTree = "<group>"; };
 		EFD7D1512189F1F2000783BE /* MockSubscriber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockSubscriber.m; sourceTree = "<group>"; };
 		EFD7D1532189F4A3000783BE /* ListOrganizationSelectActionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListOrganizationSelectActionTests.m; sourceTree = "<group>"; };
+		EFD7D155218A15EB000783BE /* MapReducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapReducer.h; sourceTree = "<group>"; };
+		EFD7D156218A15EB000783BE /* MapReducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapReducer.m; sourceTree = "<group>"; };
+		EFD7D158218A18A9000783BE /* ListReducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListReducer.h; sourceTree = "<group>"; };
+		EFD7D159218A18A9000783BE /* ListReducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListReducer.m; sourceTree = "<group>"; };
 		F85E4C2FD26341B2A125317F /* Pods-OrganizationsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMap/Pods-OrganizationsMap.debug.xcconfig"; sourceTree = "<group>"; };
 		F94A9C1FFAC17FD7322E6C42 /* Pods-OrganizationsMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMapTests/Pods-OrganizationsMapTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,8 +244,6 @@
 				EF76066E2180E099002CAF7A /* MainState.m */,
 				EF760670218132DB002CAF7A /* FetchAction.h */,
 				EF760671218132DB002CAF7A /* FetchAction.m */,
-				EF7606732181B9B0002CAF7A /* MainReducer.h */,
-				EF7606742181B9B0002CAF7A /* MainReducer.m */,
 				EF76146321893DB900AF7D22 /* PresentableErrorAction.h */,
 				EF76146421893DB900AF7D22 /* PresentableErrorAction.m */,
 			);
@@ -258,6 +259,8 @@
 				EF7614572187B79C00AF7D22 /* MapSelectAction.m */,
 				EF761460218919F200AF7D22 /* MapState.h */,
 				EF761461218919F200AF7D22 /* MapState.m */,
+				EFD7D155218A15EB000783BE /* MapReducer.h */,
+				EFD7D156218A15EB000783BE /* MapReducer.m */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -271,6 +274,8 @@
 				EF76145B218870CD00AF7D22 /* ListOrganizationSelectAction.m */,
 				EF76145D218911F300AF7D22 /* ListState.h */,
 				EF76145E218911F300AF7D22 /* ListState.m */,
+				EFD7D158218A18A9000783BE /* ListReducer.h */,
+				EFD7D159218A18A9000783BE /* ListReducer.m */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -547,6 +552,7 @@
 				EF91A8B121835D4E000B7D88 /* ListFetchService_Local.m in Sources */,
 				EF6F2E5E217E150300207983 /* AppDelegate.m in Sources */,
 				EF98B92E217E22AB006AB9AF /* MainViewController.m in Sources */,
+				EFD7D157218A15EB000783BE /* MapReducer.m in Sources */,
 				EF91A8AE218267E7000B7D88 /* PresentListAction.m in Sources */,
 				EF7614582187B79C00AF7D22 /* MapSelectAction.m in Sources */,
 				EF76066C2180DF6B002CAF7A /* MainStore.m in Sources */,
@@ -554,11 +560,11 @@
 				EF760659217FF119002CAF7A /* UIApplication+Accessor.m in Sources */,
 				EF76145C218870CD00AF7D22 /* ListOrganizationSelectAction.m in Sources */,
 				EF76146521893DB900AF7D22 /* PresentableErrorAction.m in Sources */,
-				EF7606752181B9B0002CAF7A /* MainReducer.m in Sources */,
 				EF76066F2180E099002CAF7A /* MainState.m in Sources */,
 				EF91A8B921852AC5000B7D88 /* ListSectionModel.m in Sources */,
 				EF7606672180DE85002CAF7A /* OrganizationDTOModel.m in Sources */,
 				EF91A8C121852E22000B7D88 /* MapViewController.m in Sources */,
+				EFD7D15A218A18A9000783BE /* ListReducer.m in Sources */,
 				EF761462218919F200AF7D22 /* MapState.m in Sources */,
 				EF91A8C4218537FA000B7D88 /* VisitDTOModel.m in Sources */,
 				EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */,

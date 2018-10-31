@@ -3,7 +3,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainReducer : NSObject <Reducer>
+@interface MapReducer : NSObject <Reducer>
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,25 +1,28 @@
 #import "MainStore.h"
 #import "Action.h"
 #import "ListState.h"
-#import "MainReducer.h"
 #import "MainState.h"
 #import "State.h"
 #import "StoreSubscriber.h"
+#import "Reducer.h"
 
 @interface MainStore ()
 @property (nonatomic, strong) MainState *state;
 @property (nonatomic, strong) NSMapTable<id<StoreSubscriber>, StateSelectBlock> *subscribers;
-@property (nonatomic, copy) ReduceBlock reduceBlock;
+@property (nonatomic, strong) NSMutableArray<ReduceBlock> *reduceBlocks;
 @property (nonatomic, strong) dispatch_queue_t workingQueue;
 @end
 
 @implementation MainStore
-- (instancetype)initWith:(MainReducer *)reducer state:(MainState *)initialState {
+- (instancetype)initWith:(NSArray<id<Reducer>> *)reducers state:(MainState *)initialState {
     if (self = [super init]) {
-        _reduceBlock = [[reducer createReducer] copy];
         _state = initialState;
         _workingQueue = dispatch_queue_create("StoreQueue", DISPATCH_QUEUE_SERIAL);
         _subscribers = [NSMapTable weakToWeakObjectsMapTable];
+        _reduceBlocks = [NSMutableArray arrayWithCapacity:reducers.count];
+        for (id<Reducer> reducer in reducers) {
+            [_reduceBlocks addObject:[reducer createReducer]];
+        }
     }
     return self;
 }
@@ -29,7 +32,10 @@
       if ([action respondsToSelector:@selector(start)]) {
           [action start];
       }
-      MainState *newState = self.reduceBlock(self.state, action);
+      MainState *newState = self.state;
+      for (ReduceBlock block in self.reduceBlocks) {
+          newState = block(newState, action);
+      }
       self.state = newState;
       __auto_type keys = [self.subscribers.keyEnumerator allObjects];
       for (id<StoreSubscriber> s in keys) {

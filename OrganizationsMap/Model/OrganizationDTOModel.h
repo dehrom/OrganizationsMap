@@ -5,7 +5,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OrganizationDTOModel : MTLModel <MTLJSONSerializing>
-@property (assign, readonly) int organizationId;
+@property (nonatomic, assign, readonly) NSInteger organizationId;
 @property (nonatomic, copy, readonly) NSString *visitDetail;
 @end
 

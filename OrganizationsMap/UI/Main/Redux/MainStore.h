@@ -4,7 +4,7 @@
 @protocol State;
 @protocol Action;
 @protocol StoreSubscriber;
-@class MainReducer;
+@protocol Reducer;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -13,7 +13,7 @@ typedef id<State> _Nonnull (^StateSelectBlock)(MainState *);
 @interface MainStore : NSObject
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
-- (instancetype)initWith:(MainReducer *)reducer
+- (instancetype)initWith:(NSArray<id<Reducer>> *)reducers
                    state:(MainState *)initialState NS_DESIGNATED_INITIALIZER;
 
 - (void)dispatchAction:(id<Action>)action;

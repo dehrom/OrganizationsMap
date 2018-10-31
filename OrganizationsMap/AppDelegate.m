@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 #import "ListTableViewController.h"
-#import "MainReducer.h"
+#import "MapReducer.h"
+#import "ListReducer.h"
 #import "MainState.h"
 #import "MainStore.h"
 #import "MainViewController.h"
@@ -13,7 +14,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.store = [[MainStore alloc] initWith:[MainReducer new] state:[MainState new]];
+    self.store = [[MainStore alloc] initWith:@[ [ListReducer new], [MapReducer new] ] state:[MainState new]];
 
     __auto_type controller = [[MainViewController alloc] init];
     controller.viewControllers = [self createPair];
