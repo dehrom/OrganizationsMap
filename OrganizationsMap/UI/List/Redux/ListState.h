@@ -7,10 +7,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ListState : NSObject <State>
 @property (assign, nonatomic, readonly) NSUInteger selectedOrganizationIndex;
-@property (strong, nonatomic, nonnull, readonly) NSArray<ListSectionModel *> *models;
+@property (strong, nonatomic, readonly) NSArray<ListSectionModel *> *models;
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)initWithModels:(NSArray<ListSectionModel *> *)models and:(StateStatus)status;
-- (instancetype)initWithIndex:(NSUInteger)selectedOrganizationIndex and:(StateStatus)status;
+- (instancetype)initWithModels:(NSArray<ListSectionModel *> *)models
+                         index:(NSUInteger)selectedOrganizationIndex
+                        status:(StateStatus)newStatus;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -4,15 +4,7 @@
 @synthesize status;
 
 + (instancetype)new {
-    return [[ListState alloc] initWithModels:nil index:-1 status:StateNoChanges];
-}
-
-- (instancetype)initWithModels:(NSArray<ListSectionModel *> *)models and:(StateStatus)status {
-    return [self initWithModels:models index:-1 status:status];
-}
-
-- (instancetype)initWithIndex:(NSUInteger)selectedOrganizationIndex and:(StateStatus)status {
-    return [self initWithModels:[NSArray array] index:selectedOrganizationIndex status:status];
+    return [[ListState alloc] initWithModels:[NSArray array] index:-1 status:StateNoChanges];
 }
 
 - (instancetype)initWithModels:(NSArray<ListSectionModel *> *)models index:(NSUInteger)selectedOrganizationIndex status:(StateStatus)newStatus {
