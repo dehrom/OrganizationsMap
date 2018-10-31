@@ -1,15 +1,10 @@
 #import <Foundation/Foundation.h>
-#import <ReactiveObjC/RACSignal.h>
-
-@class OrganizationDTOModel;
-@class VisitDTOModel;
+#import "ListFetchServiceProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ListFetchService_Local : NSObject
-- (RACSignal<
-    RACTwoTuple<NSArray<OrganizationDTOModel *> *, NSArray<VisitDTOModel *> *> *> *)
-    fetch;
+@interface ListFetchService_Local : NSObject <ListFetchServiceProtocol>
+- (RACSignal<RACTwoTuple<NSArray<OrganizationDTOModel *> *, NSArray<VisitDTOModel *> *> *> *)fetch;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,7 +8,9 @@
     return [[MapState alloc] initWithModels:nil point:nil status:StateNoChanges];
 }
 
-- (instancetype)initWithModels:(NSArray<MKPointAnnotation *> *)models point:(MKPointAnnotation *)selectedOrganizationPoint status:(StateStatus)newStatus {
+- (instancetype)initWithModels:(NSArray<MKPointAnnotation *> *)models
+                         point:(MKPointAnnotation *)selectedOrganizationPoint
+                        status:(StateStatus)newStatus {
     if (self = [super init]) {
         _models = [models copy];
         _selectedOrganizationPoint = selectedOrganizationPoint;

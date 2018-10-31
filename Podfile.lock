@@ -1,22 +1,26 @@
 PODS:
+  - Expecta (1.0.6)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
   - ReactiveObjC (3.1.0)
 
 DEPENDENCIES:
+  - Expecta (~> 1.0)
   - Mantle
   - ReactiveObjC
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Expecta
     - Mantle
     - ReactiveObjC
 
 SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
 
-PODFILE CHECKSUM: 5ff816b0d34cb2511dbc9e1d6e7585cd0a0aa837
+PODFILE CHECKSUM: b8c022e1efd662fcdf4dee7de71f604cd2b7dd09
 
 COCOAPODS: 1.6.0.beta.1

@@ -42,12 +42,12 @@
     __auto_type array = @[
         [[OrganizationDTOModel alloc] initWithDictionary:@{
             @"organizationId" : @"100",
-            @"title" : @"Meeting",
+            @"visitDetail" : @"Meeting",
         }
                                                    error:&error],
         [[OrganizationDTOModel alloc] initWithDictionary:@{
             @"organizationId" : @"101",
-            @"title" : @"Product Presentation",
+            @"visitDetail" : @"Product Presentation",
         }
                                                    error:&error],
     ];

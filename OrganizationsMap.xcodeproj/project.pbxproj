@@ -36,6 +36,7 @@
 		EF98B94D217E7B66006AB9AF /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B94C217E7B66006AB9AF /* ListTableViewController.m */; };
 		EF98B957217E95D0006AB9AF /* ListFetchService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98B956217E95D0006AB9AF /* ListFetchService.m */; };
 		EFB32493217FDE77005BA90A /* ListCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB32492217FDE77005BA90A /* ListCellModel.m */; };
+		EFD7D14B2189E1CD000783BE /* FetchActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7D14A2189E1CD000783BE /* FetchActionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		EFB32492217FDE77005BA90A /* ListCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCellModel.m; sourceTree = "<group>"; };
 		EFB32498217FE29F005BA90A /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
 		EFB3249A217FE49F005BA90A /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		EFD7D14A2189E1CD000783BE /* FetchActionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchActionTests.m; sourceTree = "<group>"; };
+		EFD7D14D2189E7FB000783BE /* ListFetchServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListFetchServiceProtocol.h; sourceTree = "<group>"; };
 		F85E4C2FD26341B2A125317F /* Pods-OrganizationsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMap/Pods-OrganizationsMap.debug.xcconfig"; sourceTree = "<group>"; };
 		F94A9C1FFAC17FD7322E6C42 /* Pods-OrganizationsMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganizationsMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrganizationsMapTests/Pods-OrganizationsMapTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +201,7 @@
 			children = (
 				EF6F2E75217E150400207983 /* OrganizationsMapTests.m */,
 				EF6F2E77217E150400207983 /* Info.plist */,
+				EFD7D14A2189E1CD000783BE /* FetchActionTests.m */,
 			);
 			path = OrganizationsMapTests;
 			sourceTree = "<group>";
@@ -356,6 +360,7 @@
 				EF91A8AF21835D4E000B7D88 /* ListFetchService_Local.h */,
 				EF91A8B021835D4E000B7D88 /* ListFetchService_Local.m */,
 				EF761466218942EF00AF7D22 /* FetchingError.h */,
+				EFD7D14D2189E7FB000783BE /* ListFetchServiceProtocol.h */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD7D14B2189E1CD000783BE /* FetchActionTests.m in Sources */,
 				EF6F2E76217E150400207983 /* OrganizationsMapTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

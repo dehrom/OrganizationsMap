@@ -14,17 +14,21 @@
 #import "VisitDTOModel.h"
 
 @interface FetchAction ()
-@property (strong, nonatomic) ListFetchService *fetchService;
+@property (copy, nonatomic) id<ListFetchServiceProtocol> fetchService;
 @property (strong, nonatomic) MainStore *store;
 @end
 
 @implementation FetchAction
 @synthesize payload;
 
-- (instancetype)init {
++ (instancetype)new {
+    return [[FetchAction alloc] initWith:[ListFetchService new]];
+}
+
+- (instancetype)initWith:(id<ListFetchServiceProtocol>)service; {
     if (self = [super init]) {
         _store = [[UIApplication sharedApplication] mainStore];
-        _fetchService = [ListFetchService new];
+        _fetchService = service;
     }
     return self;
 }
@@ -57,8 +61,7 @@
 
 - (NSArray<ListSectionModel *> *)resolveOrganizationsFrom:(NSArray<OrganizationDTOModel *> *)first
                                                       and:(NSArray<VisitDTOModel *> *)second {
-    NSMutableArray<ListSectionModel *> *organizationsSections =
-        [NSMutableArray new];
+    NSMutableArray<ListSectionModel *> *organizationsSections = [NSMutableArray new];
     for (VisitDTOModel *visitDTO in second) {
         @autoreleasepool {
             NSMutableArray<NSString *> *reasons = [NSMutableArray new];

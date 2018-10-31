@@ -7,7 +7,20 @@
 		<key>OrganizationsMap.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EF6F2E58217E150300207983</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF6F2E70217E150400207983</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

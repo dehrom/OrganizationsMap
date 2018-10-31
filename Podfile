@@ -13,6 +13,8 @@ target 'OrganizationsMap' do
   target 'OrganizationsMapTests' do
     inherit! :search_paths
     # Pods for testing
+    
+    pod 'Expecta', '~> 1.0'
   end
 
 end
